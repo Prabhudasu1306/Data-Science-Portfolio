@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <section id='about' class="about-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <img src="images/about/LEED.jpg" alt="Prabhudasu Parusu">
+          
+          <p>My Name is <b>PRABHUDASU PARUSU</b> I have completed a Bachelor of Science in Computer Science and Statistics from Acharya Nagarjuna University in, graduating with a GPA of 8.72. I am a NASACAM-certified data scientist and ranked in the top 3 percentile on Kaggle.</p>
+          <p>I have worked on several projects involving machine learning, deep learning, natural language processing (NLP), and data visualization. Additionally, I have a strong grasp of Java, Spring Boot, and web technologies such as HTML, CSS, JavaScript, and React.js. I also have experience with databases like MySQL, Oracle, and MongoDB.</p>
+        </div>
+      </section>
+      
+      
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-primary">Blog Post</a>
+            <a href="https://www.youtube.com/watch?v=ix9cRaBkVe0" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-primary">Blog Post</a>
+            <a href="#" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-primary">Blog Post</a>
+            <a href="#" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+
+
+<section id="skills" class="skills-section bg-white">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <div class="row">
+        <!-- Skill 1: Python -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/1.png" class="card-img-top" alt="Python">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Python is a versatile programming language known for its readability and broad use in data analysis, machine learning, web development, and automation.</p>
+              <a href="https://www.youtube.com/watch?v=ix9cRaBkVe0" class="btn btn-outline-primary">Python for Everybody By BroCode</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 2: Data Visualization -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+            <div class="card-body">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">Data visualization involves creating visual representations of data to uncover insights, trends, and patterns using tools like Matplotlib, Seaborn, and Tableau.</p>
+              <a href="https://www.coursera.org/learn/python-for-data-visualization" class="btn btn-outline-primary">Data Visualization with Python</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 3: SQL -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+            <div class="card-body">
+              <h5 class="card-title">SQL</h5>
+              <p class="card-text">SQL (Structured Query Language) is used for managing and manipulating relational databases, making it essential for data retrieval and analysis.</p>
+              <a href="https://www.coursera.org/learn/sql-for-data-science" class="btn btn-outline-primary">SQL for Data Science</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 4: Data Storytelling -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+            <div class="card-body">
+              <h5 class="card-title">Data Storytelling</h5>
+              <p class="card-text">Data storytelling combines data analysis and visualization with narrative techniques to communicate insights effectively to a non-technical audience.</p>
+              <a href="https://www.udemy.com/course/data-storytelling-using-power-bi/" class="btn btn-outline-primary">Storytelling with Data</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 5: Machine Learning -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/ML.png" class="card-img-top" alt="Machine Learning">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning</h5>
+              <p class="card-text">Machine learning involves training algorithms to make predictions or decisions based on data, using techniques like regression, classification, and clustering.</p>
+              <a href="https://www.youtube.com/watch?v=JxgmHe2NyeY&t=4733s" class="btn btn-outline-primary">Machine Learning by Krish Naik</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 6: Deep Learning -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/DL.png" class="card-img-top" alt="Deep Learning">
+            <div class="card-body">
+              <h5 class="card-title">Deep Learning</h5>
+              <p class="card-text">Deep learning focuses on neural networks with many layers, enabling advancements in areas such as image recognition, speech processing, and more.</p>
+              <a href="https://www.youtube.com/watch?v=d2kxUVwWWwU&t=1210s" class="btn btn-outline-primary">Deep Learning By Krish Naik</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 7: Natural Language Processing -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/NLP.png" class="card-img-top" alt="Natural Language Processing">
+            <div class="card-body">
+              <h5 class="card-title">Natural Language Processing</h5>
+              <p class="card-text">NLP involves the interaction between computers and human language, enabling machines to understand, interpret, and generate human language in a valuable way.</p>
+              <a href="https://www.youtube.com/watch?v=w3coRFpyddQ&list=PLZoTAELRMXVNNrHSKv36Lr3_156yCo6Nn" class="btn btn-outline-primary">Natural Language Processing By Krish Naik</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 8: Computer Vision -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/CV.png" class="card-img-top" alt="Computer Vision">
+            <div class="card-body">
+              <h5 class="card-title">Computer Vision</h5>
+              <p class="card-text">Computer vision enables computers to interpret and make decisions based on visual data, widely used in image classification, object detection, and facial recognition.</p>
+              <a href="https://www.youtube.com/watch?v=mT34_yu5pbg&list=PLZoTAELRMXVOIBRx0andphYJ7iakSg3Lk" class="btn btn-outline-primary">Introduction to Computer Vision By Krish Naik</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 9: Java -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/Java.png" class="card-img-top" alt="Java">
+            <div class="card-body">
+              <h5 class="card-title">Java</h5>
+              <p class="card-text">Java is a high-level, class-based, object-oriented programming language widely used for building applications, from web and mobile apps to large-scale enterprise systems.</p>
+              <a href="https://www.youtube.com/watch?v=bm0OyhwFDuY&list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5" class="btn btn-outline-primary">Java Programming and Software Engineering By Navin Reddy</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 10: Spring Boot -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/SpringBoot.png" class="card-img-top" alt="Spring Boot">
+            <div class="card-body">
+              <h5 class="card-title">Spring Boot</h5>
+              <p class="card-text">Spring Boot is an open-source Java-based framework used to create stand-alone, production-grade Spring-based applications quickly and easily.</p>
+              <a href="https://www.youtube.com/watch?v=iBGkJln9BPo&list=PLcs1FElCmEu121gqGwlQt47d0SqNkzSTK" class="btn btn-outline-primary">Spring Framework and Spring Boot By Think Constructive </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 11: React -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/react.png" class="card-img-top" alt="React">
+            <div class="card-body">
+              <h5 class="card-title">React</h5>
+              <p class="card-text">React is a popular JavaScript library for building user interfaces, particularly known for its component-based architecture and efficient rendering using the Virtual DOM.</p>
+              <a href="https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3" class="btn btn-outline-primary">React - The Complete Guide By Codevolution</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 12: JavaScript -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/skills/JavaScript.png" class="card-img-top" alt="JavaScript">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">JavaScript is a core technology of the web used to create interactive effects within web browsers, enabling dynamic and responsive user interfaces.</p>
+              <a href="https://www.youtube.com/watch?v=lfmg-EJ8gm4&t=40074s" class="btn btn-outline-primary">JavaScript Essentials By Bro code </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> prabhudas1306@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> 9989123680</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.linkedin.com/in/prabhudas1306" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+    
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://x.com/ParusuPrabhudas?t=KHIPkDo_NdJBdNR9ZcM0ig&s=08" target="_blank">
+          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+          Twitter
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/Prabhudasu1306" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://medium.com/@yourusername" target="_blank">
+          <img src="icons/medium.png" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://youtube.com/c/yourchannel" target="_blank">
+          <img src="icons/youtube.png" alt="YouTube" class="social-icon">
+          YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
